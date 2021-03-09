@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Welcome to my web page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="components/nav-menu.js" type="text/javascript" defer></script>
+</head>
+
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <nav-menu></nav-menu>
+
+    <ul>
+        <li><a href="#a1">First Section</a></li>
+        <li><a href="#a2">Second Section</a></li>
+        <li><a href="#a3">Third Section</a></li>
+        <li><a href="#a4">Fourth Section</a></li>
+        <li><a href="#a5">Fifth Section</a></li>
+    </ul>
+
+
+
+
+
+
+    <section>
+        <a name="a1"></a>
+        <h2>First Section</h2>
+        <p>this is information about this particular section</p>
+    </section>
+
+    <section>
+        <a name="a2"></a>
+        <h2>Second Section</h2>
+        <p>this is information about this particular section</p>
+    </section>
+
+    <section>
+        <a name="a3"></a>
+        <h2>Third Section</h2>
+        <p>this is information about this particular section</p>
+    </section>
+
+    <section>
+        <a name="a4"></a>
+        <h2>Fourth Section</h2>
+        <p>this is information about this particular section</p>
+    </section>
+
+    <section>
+        <a name="a5"></a>
+        <h2>Fifth Section</h2>
+        <p>this is information about this particular section</p>
+    </section>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+</body>
+
+</html>
